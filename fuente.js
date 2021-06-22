@@ -10,10 +10,6 @@ import jsPDF from 'jspdf';
 
 import 'jspdf-autotable';
 
-//import html2canvas from 'html2canvas';
-//import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
-
-
 
 @Component({
   selector: 'app-home',
@@ -40,7 +36,6 @@ export class HomeComponent implements OnInit {
 
     
     this.cargando = true;
-
 
     if (formulario.invalid && (Date.parse(this.filtro.desde)> Date.parse(this.filtro.hasta))) {
       // recorrer los elementos del formulario para que se dispare las validaciones
